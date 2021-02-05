@@ -48,7 +48,7 @@ func (s *EthereumSync) Run(websocketUrl string) (err error) {
 		return err
 	}
 
-	return
+	return s.mainLoop()
 }
 
 func (s *EthereumSync) mainLoop() error {
